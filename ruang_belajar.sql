@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Apr 2019 pada 05.40
--- Versi server: 10.1.36-MariaDB
--- Versi PHP: 7.2.10
+-- Generation Time: Apr 06, 2019 at 06:33 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `siswa`
+-- Table structure for table `siswa`
 --
 
 CREATE TABLE `siswa` (
@@ -37,18 +37,20 @@ CREATE TABLE `siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `siswa`
+-- Dumping data for table `siswa`
 --
 
 INSERT INTO `siswa` (`id`, `nama`, `email`, `no_hp`, `status`) VALUES
-('6666', 'Lalu Tata Fitriyadi', 'tpangestu.official@gmail', '081213448189', 'Kelas 6');
+('0001', 'Abdullah', 'abdul@gmail.com', '081299992222', 'Kelas 4'),
+('0002', 'Saepol', 'saepol@gmail.com', '081123419876', 'Kelas 4'),
+('0003', 'Lalu Tata Fitriyadi', 'tpangestu.official@gmail', '081213448189', 'Kelas 6');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `siswa`
+-- Indexes for table `siswa`
 --
 ALTER TABLE `siswa`
   ADD PRIMARY KEY (`id`);

@@ -1,0 +1,14 @@
+body{
+	background: #ececec;
+}
+.navigasi{
+	background: #f77529;
+	box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.28);
+	padding:20px 0px;
+	color: #fff;
+}
+.judul{
+	margin: 30px 0px;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0px;
+}
