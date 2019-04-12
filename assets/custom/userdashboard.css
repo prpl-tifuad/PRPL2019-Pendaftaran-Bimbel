@@ -1,0 +1,73 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,700i');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0px;
+}
+.row{
+	margin: 0px;
+}
+#image {
+	background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 65px;
+    height: 65px;
+    margin-right: 1.5em;
+    margin-bottom: 1.3em;
+    border-radius: 100%;
+}
+.navigasi{
+	background: #3498db;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+    box-shadow: 2px 0rem 0.125rem 0 rgba(0, 0, 0, 0.18);
+    z-index: 1;
+}
+.content{
+	padding:0px;
+	margin: 0px;
+}
+#image .crop {
+	height: 100%;
+	overflow: hidden;
+	background: transparent;
+	position: relative;
+	border-radius: 100%;
+}
+#image .crop img {
+    width: 100%;
+}
+.DASHBOARD{
+	font-weight: 600;
+	color: white;
+}
+.tombol{
+	margin-right: 20px;
+}
+.data{
+	float: left;
+	text-align:left;
+}
+.tombolnav{
+	    width: 100%;
+    border: 1px solid #fff;
+    background: #3498db;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.tombolnav:hover{
+	    color: #fff;
+    background-color: #64acf9;
+    border-color: #ffffff;
+}
+.nama{
+	    margin: 0px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16pt;
+}
+.contenttengah{
+	margin: 20px 0px 0px 0px;
+}
