@@ -14,8 +14,7 @@
 		$data = mysqli_query($koneksi, "select * from siswa");		
 	}
 	 ?>
-	<tr class="thead-dark">
-		<th>ID</th>
+	<tr class="thead-dark">\
 		<th>Nama Siswa</th>
 		<th>Email</th>
 		<th>No. Hp</th>
@@ -26,7 +25,6 @@
 	while($d = mysqli_fetch_array($data)){
 	?>
 	<tr>
-		<td><?php echo $d['id']; ?></td>
 		<td><?php echo $d['nama']; ?></td>
 		<td><?php echo $d['email']; ?></td>
 		<td><?php echo $d['no_hp']; ?></td>
