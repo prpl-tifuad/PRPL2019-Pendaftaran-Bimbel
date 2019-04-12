@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0px;
+}
+
+section{
+	padding: 100px 0px;
+}
+
+.slider{
+	background: #67bef991;
+}
+
+.nav{
+	    padding: 20px 0px;
+    background: #fff;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.13);
+}
+.navbar-light .navbar-brand{
+	color: #3498db;
+}
+
+.judulabout{
+	color: #3498db;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.ketabout{
+	text-align: justify;
+	border-left: 2px solid #3498db;
+	padding-left: 30px;
+}
+.komentest{
+	padding: 10px 0px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-family: roboto slab;
+    font-style: italic;	
+}
+.menjadipintar{
+	    background: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px #ccc;
+    border-radius: 11px;
+    margin: 50px 0px 0px 0px;
+}
+
+section.kelas{
+	background: #333;
+}
+
+section.kelas h5{
+	color: white;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.kotak{
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px 0px 0px 0px;
+    box-shadow: 0px -4px #e4e4e4;
+    cursor: pointer;
+}
+
+.kotak:hover{
+	background: #f2f2f2;
+	color: #fd6161;
+}
+
+.kotak .gambar{
+	    text-align: center;
+    font-size: 60pt;
+    padding: 0px 0px 15px 0px;
+}
+.daftar{
+	color: #ffffff;
+    border-radius: 5px;
+    background: #3498db;
+    margin: 0px 0px 0px 10px;
+}
+.daftar:hover{
+	background-color: #1e78b5;
+}
+.kotak .nama{
+	    background: #fd6161;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.testimoni{
+	background: white;
+
+}
+#image {
+	background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 65px;
+    height: 65px;
+    margin-right: 1.5em;
+    margin-bottom: 1.3em;
+    border-radius: 100%;
+}
+#image .crop {
+	height: 100%;
+	overflow: hidden;
+	background: transparent;
+	position: relative;
+	border-radius: 100%;
+}
+#image .crop img {
+    width: 100%;
+}
+
+.kotaktesti{
+	padding: 20px;
+    background: white;
+    border-radius: 6px;
+    line-height: 1.5em;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,.12);
+}
+.komentartest{
+	padding: 10px 10px;
+    background: #3498db;
+    font-weight: bold;
+    text-align: right;
+}
+.komentartest h6{
+	font-weight: bold;
+	margin: 0px;
+	color: white;
+}
+
+.imageku{
+	text-align: center;
+}
+
+.footer{
+	background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.footer h6{
+	margin: 0px;
+}
