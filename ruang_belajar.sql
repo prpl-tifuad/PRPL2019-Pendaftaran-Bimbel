@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2019 at 04:08 AM
+-- Generation Time: Apr 24, 2019 at 03:59 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -65,7 +65,8 @@ INSERT INTO `pilihmapel` (`id`, `email`, `kelas`) VALUES
 ('03', 'musafitriyadi@gmail.com', 'Kelas 5'),
 ('02', 'musafitriyadi@gmail.com', 'Kelas 5'),
 ('05', 'musafitriyadi@gmail.com', 'Kelas 5'),
-('04', 'musafitriyadi@gmail.com', 'Kelas 6');
+('04', 'musafitriyadi@gmail.com', 'Kelas 6'),
+('05', 'musafitriyadi@gmail.com', 'Kelas 6');
 
 -- --------------------------------------------------------
 

@@ -4,30 +4,52 @@
 body{
 	font-family: 'Poppins', sans-serif;
 	margin: 0px;
+    background-color: #f9fafb!important;
+    color: #72777a;
 }
 .row{
 	margin: 0px;
 }
+table{
+    background: #fff;
+}
+nav{
+    border-bottom: 1px solid rgba(0,0,0,.0625);
+    background: #fff!important;
+}
 #image {
-	background: #fff;
+    background: #fff;
     display: inline-block;
     vertical-align: top;
-    width: 65px;
-    height: 65px;
-    margin-right: 1.5em;
-    margin-bottom: 1.3em;
+    width: 35px;
     border-radius: 100%;
+    height: 35px;
 }
-.navigasi{
-	background: #3498db;
-	height: 100%;
-	font-family: 'Poppins', sans-serif;
-    box-shadow: 2px 0rem 0.125rem 0 rgba(0, 0, 0, 0.18);
-    z-index: 1;
+#navigasi{
+    background: #ffffff;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,.0625);
+    width: 20%;
+    max-width: 20%;
+    font-family: 'Poppins', sans-serif;
+    transition: all .4s ease;
+}
+.navigasihilang{
+	display: none;
+}
+.navigasikecil{
+    width: auto!important;
+    max-width: 20%;
 }
 .content{
-	padding:0px;
-	margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    max-width: 80%;
+    width: 80%;
+}
+.contentfull{
+    width: 95%;
+    max-width: 95%;
 }
 #image .crop {
 	height: 100%;
@@ -40,34 +62,115 @@ body{
     width: 100%;
 }
 .DASHBOARD{
-	font-weight: 600;
-	color: white;
+    text-align: center;
+    font-weight: 600;
+    padding: 17px 0px;
+    border-bottom: 1px solid rgba(0,0,0,.0625);
+    margin-bottom: 10px;
 }
-.tombol{
+.dashboardjd{
+    padding: 0px !important;
+}
+.tombol, .tombol:focus, .tombol:active{
 	margin-right: 20px;
+    background: white;
+    color: #000;
+    border: 1px solid #282529;
+    transition: 0.3s;
+    cursor: pointer;
+        box-shadow: none !important;
+}
+.tombol:hover{
+    color: #000 !important;
+    background-color: #efefef !important;
+    border-color: #b9b9b9 !important;
+
 }
 .data{
 	float: left;
 	text-align:left;
 }
-.tombolnav{
-	    width: 100%;
+.tombolnav, .tombolnav:focus, .tombolnav:active{
+    width: 100%;
     border: 1px solid #fff;
-    background: #3498db;
+    background: transparent;
     margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.0625);
     text-align: left;
+    border-radius: 0px;
+    box-shadow: none !important;
 }
 .tombolnav:hover{
-	    color: #fff;
-    background-color: #64acf9;
-    border-color: #ffffff;
+    color: #fff !important;
+    background-color: transparent  !important;
+    border-bottom: 1px solid rgba(0,0,0,.0625) !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    margin-bottom: 10px !important;
+    text-align: left !important;
+
 }
 .nama{
-	    margin: 0px;
+    margin: .3125rem;
     text-transform: capitalize;
-    font-weight: 700;
-    font-size: 16pt;
+    font-weight: 100;
+    font-size: 14pt;
+    float: left;
 }
-.contenttengah{
-	margin: 20px 0px 0px 0px;
+.nama .panggil{
+    font-weight: 600;
+    margin-right: 10px;
+}
+.navigasi a{
+    width: 100%;
+    max-width: 100%;
+}
+.iconnav{
+    margin: 0px 10px;
+    color: #72777a;
+    font-size: 13pt;
+}
+.keteranganmenu{
+    color: #72777a;
+    font-size: 13pt;
+    transition: all .2s ease;
+}
+.keteranganmenu:hover{
+    margin-left: 15px;
+}
+.isi{
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #efefef;
+}
+.jmlkelas{
+    padding: 20px;
+    background: linear-gradient(to right, #65c6fe, #98ebfe);
+    margin-bottom:10px;
+    margin-top:10px;
+    margin-right: 10px;
+    color: white;
+}
+.kotakakhir{
+    padding: 20px;
+    background: linear-gradient(to right, #fd6161, #fba9a9);
+    margin-bottom:10px;
+    margin-top:10px;
+    color: white;
+}
+.angka{
+        text-align: left;
+    margin: 0px;
+    float: left;
+    font-size: 50px;
+    width: 60%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.logojml{
+    float: right;
+    font-size: 67px;
 }

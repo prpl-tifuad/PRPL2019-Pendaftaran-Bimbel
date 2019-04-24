@@ -10,35 +10,44 @@
 	<!-- font awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/custom/landingpage.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script>new WOW().init();</script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light nav">
+		<div id="top"></div>
+		<nav class="navbar navbar-expand-lg navbar-light nav sticky-top" id="myHeader">
 			<div class="container">
-		  <a class="navbar-brand" href="#"><b>RUANGBELAJAR</b></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+			  <a class="navbar-brand" href="#top"><b>RUANGBELAJAR</b></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a data-scroll class="nav-link" href="#about">Tentang Kami</a>
-		      </li>
-		      <li class="nav-item">
-		        <a data-scroll class="nav-link" href="#kelas">Kelas Kami</a>
-		      </li>
-		      <li class="nav-item">
-		        <a data-scroll class="nav-link" href="#testi">Testimoni</a>
-		      </li>
-		      <li class="nav-item">
-		        <a data-scroll class="nav-link daftar" style="color: #fff" href="./daftar/">Mendaftar</a>
-		      </li>
-		    </ul>
-		  </div>
-		  </div>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav ml-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+				      </li>
+				      <li class="nav-item">
+				        <a data-scroll class="nav-link" href="#about">Tentang Kami</a>
+				      </li>
+				      <li class="nav-item">
+				        <a data-scroll class="nav-link" href="#kelas">Kelas Kami</a>
+				      </li>
+				      <li class="nav-item">
+				        <a data-scroll class="nav-link" href="#testi">Testimoni</a>
+				      </li>
+				       <li class="nav-item">
+				        <a data-scroll class="nav-link login" style="color: #fff" href="./login/">Sign In</a>
+				      </li>
+				      <li class="nav-item">
+				        <a data-scroll class="nav-link daftar" style="color: #fff" href="./daftar/">Mendaftar</a>
+				      </li>
+				    </ul>
+				</div>
+			</div>
 		</nav>
 
 		<section class="slider">
@@ -71,7 +80,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="menjadipintar">
-							<h5 style="margin: 0px"><b>#MENJADIPINTAR</b></h5>
+							<h5 style="margin: 0px">BANGGA <b>#MENJADIPINTAR</b></h5>
 						</div>
 					</div>
 				</div>
@@ -86,7 +95,7 @@
 						Lebih dekat dengan ilmu dimana saja, kapan saja.</h5>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row wow fadeInUp" duration="2s" delay="5s">
 					<div class="col">
 						<div class="kotak">
 							<div class="gambar">
@@ -153,7 +162,7 @@
 						<h5 style="font-weight: bold; margin: 30px 0px;">TESTIMONI</h5>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row wow bounceIn" duration="2s" delay="5s">
 					<div class="col">
 						<div class="kotaktesti">
 							<div class="imageku">
@@ -250,5 +259,10 @@
 				speedAsDuration: true
 			});
 		</script>
+		<script src="./assets/custom/header.js"></script>
+		 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    	<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
 	</body>
 </html>
