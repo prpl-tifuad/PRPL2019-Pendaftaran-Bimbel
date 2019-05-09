@@ -97,6 +97,12 @@ include './control/session.php';
                  		<?php include './control/tampildata.php'; ?>
                  	</div>
                  </div>
+
+                 <div class="container contenttengah wow rotateInUpLeft" duration="2s" delay="5s">
+                 	<div class="isi">
+                 		<?php include './control/tampildatasukses.php'; ?>
+                 	</div>
+                 </div>
 			</div>
 		</div>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2019 at 03:59 PM
+-- Generation Time: May 09, 2019 at 04:05 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -53,20 +53,18 @@ INSERT INTO `matapelajaran` (`Id`, `NamaMapel`) VALUES
 CREATE TABLE `pilihmapel` (
   `id` char(2) NOT NULL,
   `email` varchar(300) NOT NULL,
-  `kelas` enum('Kelas 4','Kelas 5','Kelas 6','') NOT NULL
+  `kelas` enum('Kelas 4','Kelas 5','Kelas 6','') NOT NULL,
+  `Status` enum('Pending','Sukses') NOT NULL,
+  `Biaya` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `pilihmapel`
 --
 
-INSERT INTO `pilihmapel` (`id`, `email`, `kelas`) VALUES
-('02', 'abdul@gmail.com', 'Kelas 4'),
-('03', 'musafitriyadi@gmail.com', 'Kelas 5'),
-('02', 'musafitriyadi@gmail.com', 'Kelas 5'),
-('05', 'musafitriyadi@gmail.com', 'Kelas 5'),
-('04', 'musafitriyadi@gmail.com', 'Kelas 6'),
-('05', 'musafitriyadi@gmail.com', 'Kelas 6');
+INSERT INTO `pilihmapel` (`id`, `email`, `kelas`, `Status`, `Biaya`) VALUES
+('02', 'musafitriyadi@gmail.com', 'Kelas 4', 'Pending', 500000),
+('05', 'musafitriyadi@gmail.com', 'Kelas 5', 'Pending', 1000000);
 
 -- --------------------------------------------------------
 
