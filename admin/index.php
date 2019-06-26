@@ -5,8 +5,14 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
 
+html,body{
+    height:100%;
+}
 body{
 	font-family: 'Poppins', sans-serif!important;
+}
+.container{
+	position:relative;
 }
 .nav{
 	padding: 20px 20px!important;
@@ -21,9 +27,23 @@ body{
 	border: 1px solid #ccc;
 	padding: 20px;
 	margin-top: 20px;
+	padding-bottom:60px;
 }
 .navbar-brand {
     color: #3498db!important;
+}
+.footer{
+	background: #333;
+	margin-top: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer h6{
+	margin: 0px;
 }
 </style>
 <html>
@@ -181,6 +201,16 @@ body{
 					 ?>
 				</div>
 			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h6>Copyright &copy 2019 By RuangBelajar.com</h6>
+						</div>
+					</div>
+				</div>
+			</footer>
 
 		<!-- javascript -->
 		<script src="../assets/bootstrap/js/boostrap.js"></script>
