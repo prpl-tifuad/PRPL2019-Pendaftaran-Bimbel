@@ -4,3 +4,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php
 </IfModule>
+Options All -Indexes
+RewriteEngine on
+ErrorDocument 404 http://127.0.0.1/bimbel/404
