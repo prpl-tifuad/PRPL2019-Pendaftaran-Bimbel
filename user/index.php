@@ -84,7 +84,7 @@ include './control/session.php';
 				
                  </div>
 
-                 <div class="container contenttengah wow rotateInUpLeft" duration="2s" delay="5s">
+                 <div class="container contenttengah wow bounceIn" duration="2s" delay="5s">
                  		<div class="row">
                  			<div class="col jmlkelas">
                  				<?php include './control/kelasdiikuti.php'; ?>

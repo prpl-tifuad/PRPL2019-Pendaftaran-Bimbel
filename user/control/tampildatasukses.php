@@ -1,9 +1,10 @@
+
 	<?php 
 		include '../database/config.php';
 		$email = $_SESSION['email'];
 		$data = mysqli_query($koneksi, "select matapelajaran.NamaMapel, pilihmapel.kelas, pilihmapel.Status, pilihmapel.Biaya from matapelajaran join pilihmapel
 			on matapelajaran.Id = pilihmapel.id where pilihmapel.email = '$email' AND pilihmapel.Status= 'Sukses'");				
-	 ?>
+   ?>
    <?php 
     if(mysqli_num_rows($data)>0)
     { 
@@ -28,13 +29,18 @@
           </thead>
           <tbody>
             <?php
+            function rupiah($angka){
+              $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
+              return $hasil_rupiah;
+
+            }
             while($d = mysqli_fetch_array($data)){
           ?>
             <tr>
               <td><?php echo $d['NamaMapel']; ?></td>
               <td><?php echo $d['kelas']; ?></td>
               <td><p style="color: green;font-weight: bold"><?php echo $d['Status']; ?></p></td>
-              <td><?php echo $d['Biaya']; ?></td>
+              <td><? echo rupiah($d['Biaya']); ?></td>
             </tr>
 
           <?php 

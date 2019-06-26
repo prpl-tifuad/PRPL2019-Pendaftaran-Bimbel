@@ -1,6 +1,14 @@
-<!-- <?php 
-// header("location:./daftar/");
-?> -->
+<?php
+session_start();
+if ( isset($_SESSION['level'])){
+	if ($_SESSION['level']=="user") {
+		header("location: ./user");
+	}else{
+		header("location: ./admin");
+	}
+}
+else{
+?>
 <html>
 	<head>
 		<title>Ruang Belajar</title>
@@ -266,3 +274,4 @@
 
 	</body>
 </html>
+<?php } ?>

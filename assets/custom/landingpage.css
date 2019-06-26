@@ -49,8 +49,14 @@ section{
     margin: 50px 0px 0px 0px;
 }
 
+section.slider{
+
+}
+
 section.kelas{
-	background: #333;
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../image/bgdepan1.jpg") fixed;
+	background-position: center;
+	background-size: 100%;
 }
 
 section.kelas h5{

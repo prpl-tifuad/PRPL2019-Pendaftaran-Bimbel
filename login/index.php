@@ -1,3 +1,14 @@
+<?php
+session_start();
+if ( isset($_SESSION['level'])){
+	if ($_SESSION['level']=="user") {
+		header("location: ../user");
+	}else{
+		header("location: ../admin");
+	}
+}
+else{
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,3 +107,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+<?php } ?>
