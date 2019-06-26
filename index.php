@@ -62,13 +62,9 @@ else{
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<h1 style="color: #fff;">Belajar Asik dengan RUANGBELAJAR<span style="color: #ff0000">.</span></h1>
-						<h1 style="font-weight: bold; color: #fff">
-							<br>
-						#MENJADIPINTAR</h1>
+						<h1 style="color: #fff;">Belajar Asik dengan <span style="color: #fd6161;font-weight: bold;">RUANGBELAJAR.</span></h1>
 					</div>
 					<div class="col text-center">
-						<img style="width: 60%;" src="./assets/image/ABOUTME.svg" alt="">
 					</div>
 				</div>
 			</div>
@@ -81,8 +77,8 @@ else{
 						<h5 class="judulabout">Tentang Kami</h5>
 						<p class="ketabout">RuangBelajar merupakan sebuah tempat bimbingan belajar di Indonesia yang berfokus pada layanan berbasis pendidikan dan telah memiliki guru - guru terdidik yang siap untuk memberikan tutor sebaik mungkin</p>
 					</div>
-					<div class="col">
-						
+					<div class="col text-center">
+						<img style="width: 60%;" src="./assets/image/ABOUTME.svg" alt="">
 					</div>
 				</div>
 				<div class="row">

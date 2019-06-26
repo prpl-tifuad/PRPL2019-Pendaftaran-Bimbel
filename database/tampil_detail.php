@@ -35,7 +35,7 @@
 			<td><?php echo $d['namamapel']; ?></td>
 			<td><?php echo $d['status']; ?></td>
 			<td><a href="./aksi/deletePilihMapel?id=<?php echo $d['email']; ?>"><button class="btn btn-primary">Edit</button></a>
-			<a href="./aksi/deletePilihMapel?id=<?php echo $d['id'];?>&email=<?php echo $d['email'];?>"><button class="btn btn-primary">Delete</button></a></td>
+			<a href="./aksi/deletePilihMapel?id=<?php echo $d['id'];?>&email=<?php echo $d['email'];?>"><button class="btn btn-light border-primary">Delete</button></a></td>
 		</tr>
 	<?php } 
 	}

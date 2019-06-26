@@ -34,11 +34,12 @@ section{
 	padding-left: 30px;
 }
 .komentest{
-	padding: 10px 0px;
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	font-family: roboto slab;
-    font-style: italic;	
+    padding: 10px 0px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-family: poppins;
+    font-size: 11pt;
+    text-align: justify;
 }
 .menjadipintar{
 	    background: linear-gradient(to bottom right, #eaeaeab0, whitesmoke);
@@ -50,7 +51,10 @@ section{
 }
 
 section.slider{
-
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../image/bgslider.jpg") fixed;
+	background-position: center;
+	background-size: 100%;
+	height: 50vh;
 }
 
 section.kelas{

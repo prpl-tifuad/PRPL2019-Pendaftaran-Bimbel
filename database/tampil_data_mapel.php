@@ -5,10 +5,10 @@
 		$carimapel = $_GET['carimapel'];
 
 		echo "<p> Mencari Data : ";
-		echo "$cari";
+		echo "$carimapel";
 		echo "</p>";
 
-		$data = mysqli_query($koneksi, "select pilihmapel.email as email, siswa.nama as nama from pilihmapel join siswa on pilihmapel.email = siswa.email  group by email where siswa.email like '%".$carimapel."%'");				
+		$data = mysqli_query($koneksi, "select pilihmapel.email as email, siswa.nama as nama from pilihmapel join siswa on pilihmapel.email = siswa.email where siswa.email like '%".$carimapel."%' group by email ");				
 	}else{
 		$data = mysqli_query($koneksi, "select pilihmapel.email as email, siswa.nama as nama from pilihmapel join siswa on pilihmapel.email = siswa.email  group by email");		
 	}

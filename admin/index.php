@@ -2,6 +2,12 @@
 	include './control/cekadmin.php';
  ?>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400');
+
+body{
+	font-family: 'Poppins', sans-serif!important;
+}
 .nav{
 	padding: 20px 20px!important;
     background: #fff;
@@ -69,7 +75,7 @@
 			                        }
 			                    }
 			                    ?>
-								<h3 class="judul">Siswa Pendaftar</h3>
+								<h4 class="judul">Siswa Pendaftar</h4>
 								<table class="table table-bordered table-hover table-light">
 									<?php 
 										include '../database/tampil_detail.php';
@@ -102,15 +108,26 @@
 			                        }
 			                    }
 			                    ?>
-								<h3 class="judul">Siswa Pendaftar</h3>
+								<div class="row">
+				                    <div class="col">
+										<h4 class="judul">Siswa Pendaftar</h4>
+									</div>
+									<div class="col mr-auto">
+										<form class="form-inline my-2 my-lg-0" action="../admin/" method="get">
+										  <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Cari Nama Anak.." aria-label="Search" name="carimapel">
+										  <button class="btn btn-primary" type="submit" ><i style="padding: 4px;" class="fas fa-search"></i></button>
+										</form>
+									</div>
+								</div>
+								<hr>
 								<table class="table table-bordered table-hover table-light">
 									<?php 
 										include '../database/tampil_data_mapel.php';
 									?>
 								</table>
 								<?php 
-								if(isset($_GET['cari'])){
-									$cari = $_GET['cari'];
+								if(isset($_GET['carimapel'])){
+									$cari = $_GET['carimapel'];
 									echo "<a href='../admin/'><button class='btn btn-danger'>Kembali</button></a>";		
 								} ?>
 							</div>
@@ -120,7 +137,7 @@
 					 ?>
 					
 					<?php 
-						if(!isset($_GET['detail'])){
+						if(!isset($_GET['detail']) AND !isset($_GET['carimapel'])){
 					 ?>
 					<div class="row">
 						<div class="col">
@@ -137,7 +154,7 @@
 			                    ?>
 			                    <div class="row">
 				                    <div class="col">
-										<h3 class="judul">Data Akun Terdaftar</h3>
+										<h4 class="judul">Data Akun Terdaftar</h4>
 									</div>
 									<div class="col mr-auto">
 										<form class="form-inline my-2 my-lg-0" action="../admin/" method="get">
