@@ -39,14 +39,14 @@ body{
     padding: 20px;
     color: #000;
     border-radius: 10px;
-    margin: 81px auto;
+    margin: 70px auto;
 }
 
 .login2 h1{
   text-align: center;
   font-size: 40px;
   font-family: poppins;
-  border-bottom: 6px solid #4caf50;
+  border-bottom: 6px solid #3498db;
   margin-bottom: 25px; 
   padding: 13px 0;
 }
@@ -57,7 +57,7 @@ body{
   font-size: 20px;
   padding: 8px 0;
   margin: 8px 0;
-  border-bottom: 1px solid #4caf50;
+  border-bottom: 1px solid #3498db;
 }
 .textbox i{
   width: 26px;
@@ -79,7 +79,6 @@ body{
 
 .btn{
   width: 100%;
-  background: #4caf50;
   padding: 20px;
   border: none;
   color: white;
@@ -91,7 +90,7 @@ body{
 
 .btn2{
   width: 100%;
-  background: #f87e25;
+  background: #3498db;
   padding: 20px;
   border: none;
   color: white;
@@ -112,7 +111,7 @@ body{
     color: white;
     text-align: center;
     padding: 20px 0px;
-    bottom: 0;
+    bottom: 0px;
     float: left;
     width: 100%;  
 }

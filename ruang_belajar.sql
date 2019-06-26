@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2019 at 04:05 PM
+-- Generation Time: Jun 26, 2019 at 07:38 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -21,6 +21,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `ruang_belajar`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `no_id` int(11) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `image` varchar(400) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`no_id`, `nama`, `email`, `password`, `image`) VALUES
+(1, 'Musa Fitriyadi', 'muhammadmusafitriyadi@gmail.com', '202cb962ac59075b964b07152d234b70', '../assets/image/userdefault.png');
 
 -- --------------------------------------------------------
 
@@ -64,7 +85,8 @@ CREATE TABLE `pilihmapel` (
 
 INSERT INTO `pilihmapel` (`id`, `email`, `kelas`, `Status`, `Biaya`) VALUES
 ('02', 'musafitriyadi@gmail.com', 'Kelas 4', 'Pending', 500000),
-('05', 'musafitriyadi@gmail.com', 'Kelas 5', 'Pending', 1000000);
+('01', 'musafitriyadi@gmail.com', 'Kelas 4', 'Pending', 500000),
+('05', 'musafitriyadi@gmail.com', 'Kelas 6', 'Pending', 1300000);
 
 -- --------------------------------------------------------
 
@@ -86,15 +108,19 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`nama`, `email`, `password`, `no_hp`, `status`, `fotoprofile`) VALUES
-('Abdullah', 'abdul@gmail.com', '202cb962ac59075b964b07152d234b70', '081299992222', 'Kelas 4', '../assets/image/userdefault.png'),
 ('Arfi Maulana', 'arfimaulana@gmail.com', '6531401f9a6807306651b87e44c05751', '081237492742', 'Kelas 6', '../assets/image/userdefault.png'),
 ('Musa Fitriyadi', 'musafitriyadi@gmail.com', '202cb962ac59075b964b07152d234b70', '2123123123', 'Kelas 4', '../assets/image/userdefault.png'),
-('Saepol', 'saepol@gmail.com', '202cb962ac59075b964b07152d234b70', '081123419876', 'Kelas 4', '../assets/image/userdefault.png'),
 ('Lalu Tata Fitriyadi', 'tpangestu.official@gmail', '202cb962ac59075b964b07152d234b70', '081213448189', 'Kelas 6', '../assets/image/userdefault.png');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`no_id`);
 
 --
 -- Indexes for table `matapelajaran`
@@ -114,6 +140,16 @@ ALTER TABLE `pilihmapel`
 --
 ALTER TABLE `siswa`
   ADD PRIMARY KEY (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `no_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables

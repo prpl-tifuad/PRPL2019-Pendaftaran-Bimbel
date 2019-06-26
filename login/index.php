@@ -74,15 +74,15 @@ else{
 						<form action="./proses/index.php" method="post">
 							<div class="textbox">
 								<i class="fas fa-user"></i>
-								<input type="text" placeholder="Email Anda" name="email">
+								<input type="text" class="w-100" placeholder="Email Anda" name="email">
 							</div>
 
 							<div class="textbox">
 								<i class="fas fa-lock"></i>
 								<input type="password" placeholder="Password Anda" name="password"/>
 							</div>			
-							<div>
-								<input type="submit" value="Login" class="btn">
+							<div style="margin-top: 30px">
+								<input type="submit" value="Login" class="btn btn-danger">
 								<p class="text-center">Belum Punya Akun ? <a href="../daftar/">Daftar Disini</a></p>
 							</div>
 						</form>

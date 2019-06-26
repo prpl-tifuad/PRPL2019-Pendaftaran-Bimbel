@@ -136,7 +136,7 @@ else{
 							<label for="exampleFormControlInput1 judul">Konfirmasi Password</label>
 							<input type="Password" class="form-control inputan" name="repass" placeholder="Konfimasi Password Anda">
 						</div>
-						<input type="submit" value="SUBMIT" class="btn btn-primary klik">
+						<input type="submit" value="SUBMIT" class="btn btn-danger w-100">
 					</form>
 					<p align="center">Sudah Punya Akun ? <a href="../login">Masuk Disini</a></p>
 				</div>
