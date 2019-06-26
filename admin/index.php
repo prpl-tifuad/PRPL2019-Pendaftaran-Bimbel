@@ -201,6 +201,9 @@ body{
 					 ?>
 				</div>
 			</div>
+			<?php 
+				if(!isset($_GET['detail']) AND !isset($_GET['carimapel']) AND !isset($_GET['cari'])){
+			?>
 
 			<footer class="footer">
 				<div class="container">
@@ -211,6 +214,7 @@ body{
 					</div>
 				</div>
 			</footer>
+		<?php 	} ?>
 
 		<!-- javascript -->
 		<script src="../assets/bootstrap/js/boostrap.js"></script>
