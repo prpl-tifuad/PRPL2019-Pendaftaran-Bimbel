@@ -29,18 +29,14 @@
           </thead>
           <tbody>
             <?php
-            function rupiah($angka){
-              $hasil_rupiah = "Rp " . number_format($angka,0,',','.');
-              return $hasil_rupiah;
 
-            }
             while($d = mysqli_fetch_array($data)){
           ?>
             <tr>
               <td><?php echo $d['NamaMapel']; ?></td>
               <td><?php echo $d['kelas']; ?></td>
               <td><p style="color: green;font-weight: bold"><?php echo $d['Status']; ?></p></td>
-              <td><? echo rupiah($d['Biaya']); ?></td>
+              <td><?= rupiah($d['Biaya']); ?></td>
             </tr>
 
           <?php 

@@ -80,7 +80,30 @@ body{
 			<div class="konten">
 				<div class="container">
 					<?php 
-						if(isset($_GET['detail'])){
+						if(isset($_GET['editid'])){
+					 ?>
+					<div class="row">
+						<div class="col">
+							<div class="canvas">
+								<h4 class="judul">Siswa Pendaftar</h4>
+								<table class="table table-bordered table-hover table-light">
+									<?php 
+										include '../database/tampil_update.php';
+									?>
+								</table>
+								<?php 
+								if(isset($_GET['detail'])){
+									$cari = $_GET['detail'];
+									echo "<a href='../admin/'><button class='btn btn-danger'>Kembali</button></a>";		
+								} ?>
+							</div>
+						</div>
+					</div>
+					<?php }
+					 ?>
+
+					<?php 
+						if(isset($_GET['detail']) AND !isset($_GET['editid'])){
 					 ?>
 					<div class="row">
 						<div class="col">
@@ -91,6 +114,11 @@ body{
 			                        if($pesan == "suksesdelete"){
 			                            echo "<div class='alert alert-primary'><a href='#' class='close' onclick='this.parentElement.style.display='none';' data-dismiss='alert' aria-label='Close'>&times;</a>";
 			                            echo 'Data berhasil dihapus';
+			                            echo '</div>';
+			                        }
+			                        else  if($pesan == "updatesukses"){
+			                            echo "<div class='alert alert-primary'><a href='#' class='close' onclick='this.parentElement.style.display='none';' data-dismiss='alert' aria-label='Close'>&times;</a>";
+			                            echo 'Data berhasil di update!';
 			                            echo '</div>';
 			                        }
 			                    }
@@ -113,7 +141,7 @@ body{
 					 ?>
 
 					<?php 
-						if(!isset($_GET['cari']) AND !isset($_GET['detail'])){
+						if(!isset($_GET['cari']) AND !isset($_GET['detail']) AND !isset($_GET['editid'])){
 					 ?>
 					<div class="row">
 						<div class="col">
@@ -157,8 +185,8 @@ body{
 					 ?>
 					
 					<?php 
-						if(!isset($_GET['detail']) AND !isset($_GET['carimapel'])){
-					 ?>
+						if(!isset($_GET['detail']) AND !isset($_GET['carimapel']) AND !isset($_GET['editid'])){
+					 ?> 
 					<div class="row">
 						<div class="col">
 							<div class="canvas">
