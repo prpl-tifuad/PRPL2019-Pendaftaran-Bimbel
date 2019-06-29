@@ -8,5 +8,7 @@ Nama Anggota :
 
 * Ganjar Tatag Pangestu       (1700018057)
 
+<hr>
 
-> **File ini masih belum 100% Selesai, akan terus di update.**
+
+> **File web ini sudah selesai 100%.**
